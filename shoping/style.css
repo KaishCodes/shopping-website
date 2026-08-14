@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+hr{
+    height: 3px;
+    background-color: #000;
+}
+/* body{background-color: black; */
+    
+    /* height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        black 0%,
+        grey 100%
+    ); */
+
+.logo{
+    margin: 20px;
+    font-weight: 600;
+    color: rgb(190, 62, 62);
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar{
+    
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.main-nav{
+    margin: 20px;
+    padding: 10px;
+    word-spacing: 20px;
+}
+.main-nav a{
+    color: #000;
+    font-weight: 00;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.main-nav a:hover{
+    color: rgb(167, 82, 2);
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+.content{
+    overflow-x: auto;
+    display: flex;
+    gap: 0;
+}
+.content::-webkit-scrollbar{
+    display: none;
+}
+.slide-img{
+    display: flex;
+    animation: spin 20s infinite linear both running ;
+}
+.Image{
+    display: flex;
+}
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
+}
+.flip{
+    margin: 10px;
+    /* filter: invert(); */
+    align-self: center;
+    padding-left: 250px;
+}
+.Brand{
+    width: 100vw;
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+    
+}
+.box{
+    
+    border: 2px solid black;    
+}
+.brand-logo{
+    
+    width: 20vw;
+    align-items: center;
+}
