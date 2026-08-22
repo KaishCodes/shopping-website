@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image test </title>
+    <link rel="stylesheet" href="imgtest.css">
+</head>
+<body>
+
+    <h1>My Gallery</h1>
+
+    <div class="gallery">
+
+        <!-- IMAGE 1 -->
+        <div class="card" onclick="openDetails(0)">
+            <img src="Adidas img/1.jpg" alt="Mountain">
+        </div>
+
+        <!-- IMAGE 2 -->
+        <div class="card" onclick="openDetails(1)">
+            <img src="Adidas img/1.jpg" alt="Beach">
+        </div>
+
+        <!-- IMAGE 3 -->
+        <div class="card" onclick="openDetails(2)">
+            <img src="Adidas img/1.jpg" alt="City">
+        </div>
+
+    </div>
+
+
+    <!-- DETAILS PANEL -->
+
+    <div class="details" id="details">
+
+        <!-- CANCEL BUTTON -->
+        <button class="cancel" onclick="closeDetails()">✕</button>
+
+        <img id="detailImage" src="" alt="">
+
+        <h2 id="detailTitle"></h2>
+
+        <p id="detailDescription"></p>
+
+        <p id="detailLocation"></p>
+
+        <p id="detailPrice"></p>
+
+    </div>
+
+
+    
+    
+<script src="imagestest.js"></script>    
+</body>
+</html>

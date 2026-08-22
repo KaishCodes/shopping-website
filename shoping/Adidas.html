@@ -20,30 +20,77 @@
     </div>
     <div class="welcome"><h1>Welcom to our Adidas site</h1></div>
 
+    <div class="shoes-heading"><h2>SHOES</h2></div>
 
     <div class="product">
-      <div class="adi-shoes">
+      <div class="adi-shoes" onclick="openDetails(0)">
         <img src="Adidas img/1.jpg" alt="" />
-        <div class="info">
-          <img src="Adidas img/1.jpg" />
-          <div>
-            <h3>Adidas Superstar</h3>
-            <p>Classic Sneakers</p>
-            <p>₹4,999</p>
-          </div>
-        </div>
       </div>
-      <div class="adi-shoes"><img src="Adidas img/2.jpg" alt="" /></div>
-      <div class="adi-shoes"><img src="Adidas img/3.jpg" alt="" /></div>
-      <div class="adi-shoes"><img src="Adidas img/4.jpg" alt="" /></div>
-      <div class="adi-shoes"><img src="Adidas img/5.jpg" alt="" /></div>
-      <div class="adi-shoes"><img src="Adidas img/6.jpg" alt="" /></div>
-      <div class="adi-shoes"><img src="Adidas img/7.jpg" alt="" /></div>
-      <div class="adi-shoes"><img src="Adidas img/8.jpg" alt="" /></div>
-      <div class="adi-shoes"><img src="Adidas img/9.jpg" alt="" /></div>
-      <div class="adi-shoes"><img src="Adidas img/10.jpg" alt="" /></div>
-      <div class="adi-shoes"><img src="Adidas img/1.jpg" alt="" /></div>
-      <div class="adi-shoes"><img src="Adidas img/2.jpg" alt="" /></div>
+
+      <div class="adi-shoes" onclick="openDetails(1)">
+        <img src="Adidas img/2.jpg" alt="" />
+      </div>
+
+      <div class="adi-shoes" onclick="openDetails(2)">
+        <img src="Adidas img/3.jpg" alt="" />
+      </div>
+
+      <div class="adi-shoes" onclick="openDetails(3)">
+        <img src="Adidas img/4.jpg" alt="" />
+      </div>
+
+      <div class="adi-shoes" onclick="openDetails(4)">
+        <img src="Adidas img/5.jpg" alt="" />
+      </div>
+
+      <div class="adi-shoes" onclick="openDetails(5)">
+        <img src="Adidas img/6.jpg" alt="" />
+      </div>
+
+      <div class="adi-shoes" onclick="openDetails(6)">
+        <img src="Adidas img/7.jpg" alt="" />
+      </div>
+
+      <div class="adi-shoes" onclick="openDetails(7)">
+        <img src="Adidas img/8.jpg" alt="" />
+      </div>
+
+      <div class="adi-shoes" onclick="openDetails(8)">
+        <img src="Adidas img/9.jpg" alt="" />
+      </div>
+
+      <div class="adi-shoes" onclick="openDetails(9)">
+        <img src="Adidas img/10.jpg" alt="" />
+      </div>
+
+      <div class="adi-shoes" onclick="openDetails(10)">
+        <img src="Adidas img/1.jpg" alt="" />
+      </div>
+
+      <div class="adi-shoes" onclick="openDetails(11)">
+        <img src="Adidas img/2.jpg" alt="" />
+      </div>
     </div>
+    <div class="details" id="details">
+      <!-- CANCEL BUTTON -->
+      <button class="cancel" onclick="closeDetails()">✕</button>
+
+      <img id="detailImage" src="" alt="" />
+
+      <h2 id="detailTitle"></h2>
+
+      <p id="detailDescription"></p>
+
+      <p id="detailBest_for"></p>
+
+      <p id="detailStyle"></p>
+
+      <p id="detailBrand"></p>
+
+      <p id="detailPrice"></p>
+
+    </div>
+
+    <script src="imagestest.js"></script>
   </body>
 </html>

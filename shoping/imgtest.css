@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+
+/* GALLERY */
+
+.gallery {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+/* IMAGE CONTAINER */
+
+.card {
+    width: 250px;
+    cursor: pointer;
+}
+
+
+/* MAIN IMAGES */
+
+.card img {
+    width: 250px;
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+
+/* DETAILS PANEL */
+
+.details {
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+    right: 0;
+
+    width: 50vw;
+    height: 100vh;
+
+    background: white;
+
+    padding: 30px;
+
+    z-index: 1000;
+
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.4);
+
+    overflow-y: auto;
+}
+
+
+/* SHOW PANEL */
+
+.details.active {
+    display: block;
+}
+
+
+/* IMAGE INSIDE DETAILS */
+
+.details > img {
+    width: 100%;
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+}
+
+
+/* TITLE */
+
+.details h2 {
+    font-size: 32px;
+
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+
+/* TEXT */
+
+.details p {
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    margin-bottom: 10px;
+}
+
+
+/* CANCEL BUTTON */
+
+.cancel {
+    position: absolute;
+
+    top: 15px;
+    right: 20px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+
+    z-index: 1100;
+}
+
+
+/* CANCEL HOVER */
+
+.cancel:hover {
+    background: #ddd;
+}
